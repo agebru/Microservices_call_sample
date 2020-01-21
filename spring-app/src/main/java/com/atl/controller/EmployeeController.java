@@ -99,6 +99,17 @@ public class EmployeeController {
 		}
 		return empList;
 	}
+	
+	
+	@GetMapping("/all-all")
+	public List<EmployeeInfo> getAll_projection() {
+		List<EmployeeInfo> findBy = employeeRepository.findBy();
+		for(EmployeeInfo ei:findBy) {
+			System.out.println("Name:"+ei.getName()+" Salary: "+ei.getSalary()+" Department:"+ei.getDepartment());
+		}
+		
+		return employeeRepository.findBy();
+	}
 
 	private List<Employee> createEmployees() {
 		return Arrays.asList(Employee.of("Diana", Department.of("Admin", "NY"), 3000),
