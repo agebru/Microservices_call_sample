@@ -9,5 +9,6 @@ public interface EmployeeInfo {
 	
 	interface DeptInfo {
         String getDeptName();
+        String getLocation();
     }
 }

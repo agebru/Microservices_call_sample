@@ -49,6 +49,7 @@ public class EmployeeController {
 			// set Department
 			Department dept = new Department();
 			dept.setDeptName(einfo.getDepartment().getDeptName());
+			dept.setLocation(einfo.getDepartment().getLocation());
 			emp.setDepartment(dept);
 			EmpList.add(emp);
 
@@ -70,6 +71,7 @@ public class EmployeeController {
 			// Set Department
 			Department d = new Department();
 			d.setDeptName(einfo.getDepartment().getDeptName());
+			d.setLocation(einfo.getDepartment().getLocation());
 			tempEmp.setDepartment(d);
 			empList.add(tempEmp);
 
@@ -90,6 +92,7 @@ public class EmployeeController {
 			// Set Department
 			Department d = new Department();
 			d.setDeptName(einfo.getDepartment().getDeptName());
+			d.setLocation(einfo.getDepartment().getLocation());
 			tempEmp.setDepartment(d);
 			empList.add(tempEmp);
 
