@@ -13,4 +13,5 @@ import com.atl.model.UserId;
 public interface FullNameRepositoryUsingProjection extends JpaRepository<User, UserId>{
 	
 	List<UserFirstNameLastNameProjection> findByFirstName(String fname);
+	List<UserFirstNameLastNameProjection> findBy();
 }

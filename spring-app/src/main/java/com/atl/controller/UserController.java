@@ -25,7 +25,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import javassist.NotFoundException;
 
 @RestController
-public class HomeController {
+public class UserController {
 	@Autowired
 	private UserRepository userRepo;
 	
