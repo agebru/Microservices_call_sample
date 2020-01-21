@@ -9,8 +9,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +43,7 @@ public class CallRemoteController {
 
 	
 	private static final String remoteServiceUrl = "http://localhost:8096/my-app/users";
+	//private static final String remoteServiceUrl = "http://spring-app-service/my-app/users";
 	
 	@GetMapping("/")
 	public String home() {

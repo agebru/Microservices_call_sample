@@ -12,6 +12,7 @@ import com.atl.model.UserId;
 public interface UserRepository extends JpaRepository<User, UserId> {
 	
 	
+	
 	@Query(value="SELECT INT_CODE,STR_CODE,FIRST_NAME FROM USER",nativeQuery = true)
 	public List<Object[]> getUsersWithIdAndFirstNames();
 	
